@@ -1,0 +1,69 @@
+.phoneNumber:hover {
+  cursor: pointer;
+}
+
+.displayInline {
+  display: inline-block;
+}
+
+.container {
+  text-align: center;
+  vertical-align: top;
+}
+
+.item {
+  vertical-align: top;
+  display: inline-block;
+  width: calc(100% / 5);
+}
+
+.parent {
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.logo {
+  padding: 0;
+}
+
+image {
+  display: inline-block;
+}
+
+.contact {
+  padding-top: 25px;
+}
+
+.adress {
+  padding-top: 25px;
+}
+
+.mail {
+  padding: 25px;
+}
+
+.item a {
+  opacity: 100%;
+}
+
+.mail a {
+  opacity: 100%;
+  color: rgb(0, 0, 0);
+}
+
+.contact a {
+  text-decoration: underline;
+}
+
+.parent {
+  background-color: rgb(255, 255, 255);
+}
+
+.phoneNumber {
+  font-size: 25px;
+}
+
+.logo img {
+  width: 100%;
+}
