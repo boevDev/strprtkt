@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import s from './scss/MainPage.module.scss';
-import Slider from '../Components/Slider';
+import Slider from '../Components/Slider/Slider';
 
 const MainPage: FC = () => {
   return (

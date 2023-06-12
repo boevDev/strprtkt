@@ -27,16 +27,65 @@
   padding: 0;
 }
 
-image {
-  display: inline-block;
-}
-
 .contact {
   padding-top: 25px;
 }
 
 .adress {
   padding-top: 25px;
+
+  button {
+    margin-top: 40px;
+    background: none;
+    border-radius: 10px;
+    border: solid 1px;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    width: 100%;
+    transition: all .1s ease-in-out;
+
+    @media only screen and (max-width: 1450px) {
+      margin-top: 30px;
+    }
+  }
+
+  button:hover {
+    background: #6CF;
+    color: white;
+    border-color: white;
+  }
+
+  @media only screen and (max-width: 1750px) {
+    font-size: 15px;
+  }
+
+  @media only screen and (max-width: 1650px) {
+    font-size: 14px;
+  }
+
+  @media only screen and (max-width: 1530px) {
+    font-size: 13px;
+  }
+
+  @media only screen and (max-width: 1430px) {
+    font-size: 12px;
+  }
+
+  @media only screen and (max-width: 1310px) {
+    font-size: 11px;
+  }
+
+  @media only screen and (max-width: 1220px) {
+    font-size: 10px;
+  }
+
 }
 
 .mail {
@@ -62,8 +111,22 @@ image {
 
 .phoneNumber {
   font-size: 25px;
+
+  @media only screen and (max-width: 1444px) {
+    font-size: 20px;
+  }
+
+  @media only screen and (max-width: 1310px) {
+    font-size: 19px;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    font-size: 15px;
+  }
 }
 
 .logo img {
   width: 100%;
 }
+
+

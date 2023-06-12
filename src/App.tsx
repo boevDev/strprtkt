@@ -18,7 +18,6 @@ const App: FC = () => {
     <>
       <Header />
       <Navbar />
-
       <Routes>
         <Route path='/' element={<MainPage />} />
         <Route path='about' element={<AboutPage />} />

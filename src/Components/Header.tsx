@@ -71,6 +71,9 @@ const Header: FC = () => {
         </div>
         <div className={`${s.adress} ${s.displayInline} ${s.item}`}>
           г. Екатеринбург, ул. Чкалова, д. 252, офис 100
+          <Link to='https://go.2gis.com/k5rqao' target='_blank'>
+            <button>Как добраться?</button>
+          </Link>
         </div>
         <div className={s.item}></div>
       </div>
