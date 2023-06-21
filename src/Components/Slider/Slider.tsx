@@ -3,8 +3,8 @@ import './Slider.scss';
 import Slide from './Slide/Slide';
 import 'swiper/css/bundle';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar } from 'swiper';
-// import 'swiper/css/pagination';
+import { Navigation, Pagination } from 'swiper';
+
 const Slider: FC = () => {
   return (
     <div className='slider'>
