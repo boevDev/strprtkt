@@ -92,11 +92,16 @@
   padding: 25px;
 }
 
+.mail a:hover {
+  opacity: 70%;
+}
+
 .item a {
   opacity: 100%;
 }
 
 .mail a {
+  transition: opacity 0.1s;
   opacity: 100%;
   color: rgb(0, 0, 0);
 }
@@ -106,10 +111,12 @@
 }
 
 .parent {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(245, 245, 245);
 }
 
 .phoneNumber {
+  color: black;
+  transition: opacity 0.1s;
   font-size: 25px;
 
   @media only screen and (max-width: 1444px) {
@@ -123,10 +130,13 @@
   @media only screen and (max-width: 1200px) {
     font-size: 15px;
   }
+
+}
+
+.phoneNumber:hover {
+  opacity: 70%;
 }
 
 .logo img {
   width: 100%;
 }
-
-

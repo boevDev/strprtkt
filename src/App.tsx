@@ -1,17 +1,17 @@
 import { FC } from 'react';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import MainPage from './Pages/MainPage';
-import AboutPage from './Pages/AboutPage';
-import ServicesPage from './Pages/ServicesPage';
-import Navbar from './Components/Navbar';
-import Header from './Components/Header';
-import NotfoundPage from './Pages/NotfoundPage';
-import PartnersPage from './Pages/PartnersPage';
-import ClientsPage from './Pages/СlientsPage';
-import ObjectsPage from './Pages/ObjectsPage';
-import ReviewsPage from './Pages/ReviewsPage';
-import ContactsPage from './Pages/ContactsPage';
+import AboutPage from './Pages/About';
+import ServicesPage from './Pages/Services/Index';
+import Navbar from './Components/Navbar/Navbar';
+import Header from './Components/Header/Header';
+import NotfoundPage from './Pages/NotFound/Index';
+import PartnersPage from './Pages/Partners/Index';
+import ClientsPage from './Pages/Clients/Index';
+import ObjectsPage from './Pages/Objects/Index';
+import ReviewsPage from './Pages/Reviews/Index';
+import ContactsPage from './Pages/Contacts/Index';
+import MainPage from './Pages/Main/Index';
 
 const App: FC = () => {
   return (

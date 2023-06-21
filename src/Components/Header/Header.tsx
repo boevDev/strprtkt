@@ -19,44 +19,27 @@ const Header: FC = () => {
         </div>
         <div className={`${s.contact} ${s.displayInline} ${s.item}`}>
           <div className={`${s.phone} ${s.displayInline}`}>
-            <span
+            <a
+              style={{ textDecoration: 'none' }}
+              href='tel: +73432863846'
               className={`${s.phoneNumber} ${s.displayInline}`}
               onClick={() => {
-                navigator.clipboard.writeText('+73432863846').then(
-                  () => {
-                    window.alert('Номер телефона скопирован в буфер обмена!');
-                    console.log('OK');
-                    /* clipboard successfully set */
-                  },
-                  () => {
-                    console.log('not OK');
-                    /* clipboard write failed */
-                  }
-                );
+                navigator.clipboard.writeText('+73432863846');
               }}
             >
               +7 (343) 361-66-72
-            </span>
+            </a>
             ,{' '}
-            <span
+            <a
+              style={{ textDecoration: 'none' }}
+              href='tel: +73432863846'
               className={`${s.phoneNumber} ${s.displayInline}`}
               onClick={() => {
-                navigator.clipboard.writeText('+73432863846').then(
-                  () => {
-                    window.alert('Номер телефона скопирован в буфер обмена!');
-                    console.log('OK');
-
-                    /* clipboard successfully set */
-                  },
-                  () => {
-                    console.log('not OK');
-                    /* clipboard write failed */
-                  }
-                );
+                navigator.clipboard.writeText('+73432863846');
               }}
             >
               +7 (343) 286-38-46
-            </span>
+            </a>
           </div>
           <div className={s.mail}>
             <a

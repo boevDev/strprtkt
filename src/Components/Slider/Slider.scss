@@ -1,0 +1,22 @@
+.swiper {
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background-color: #6CF;
+    }
+
+    .swiper-pagination {
+        margin-bottom: 11px;
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+    color: #6CF;
+    font-size: 50px;
+    }
+}
+
+
+.swiper-pagination-progressbar-fill {
+    // background-color: #2FCDF0 !important;
+}

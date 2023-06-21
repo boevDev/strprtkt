@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import s from './style.module.scss';
 
 const ReviewsPage: FC = () => {
   return (
