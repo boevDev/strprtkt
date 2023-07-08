@@ -1,0 +1,279 @@
+.navbar {
+  width: 100%;
+  .wrapper {
+    background-color: rgb(26, 26, 26);
+
+    .container {
+      max-width: 960px;
+      padding: 0 20px;
+      width: calc(100% - 40px);
+      margin: 0 auto;
+      gap: 1rem;
+      height: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    
+      img {
+        width: 30px;
+        vertical-align: middle;
+      }
+
+      .item {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        color: rgb(255, 255, 255);
+        transition: opacity 0.2s ease-in-out;
+        transition: border 0.05s ease-in-out;
+        text-decoration: none;
+        opacity: 50%;
+      }
+
+      .item:hover {
+        opacity: 80%;
+      }
+
+      .active {
+        opacity: 100%;
+      }
+
+      .active:not(.icon) {
+        border-bottom: 3px solid #007AFF;
+      }
+    }
+    .burgerBtn {
+      display: none;
+      position: relative;
+      min-width: 40px;
+      height: 40px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 5px;
+      background-color: transparent;
+      transition: background-color 0.4 ease-in-out;
+    }
+
+    .burgerBtn:hover {
+      cursor: pointer;
+    }
+
+    .burgerBtn span {
+      margin-top: -1px;
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      background-color: white;
+      left: 4.3px;
+      transition: transform .3s, opacity .5s, background-color .5s;
+      -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
+      -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
+    }
+
+    .burgerBtn span:nth-child(1) {
+      transform: translateY(-10px);
+    }
+
+    .burgerBtn span:nth-child(3) {
+      transform: translateY(10px);
+    }
+
+    .logoNav img {
+      display: none;
+    }
+
+    .btnContainer {
+      display: none;
+
+      .phone {
+        width: calc(100% - 40px);
+        padding: 0 20px;
+        width: 450px;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5px;
+
+        @media screen and (max-width: 625px) {
+          max-width: 200px;
+          flex-direction: column;
+        }
+
+        @media screen and (max-width: 440px) {
+          max-width: 156px;
+        }
+
+        @media screen and (max-width: 415px) {
+          max-width: 130px;
+        }
+
+        @media screen and (max-width: 390px) {
+          max-width: 100px;
+        }
+
+        @media screen and (max-width: 360px) {
+          max-width: 80px;
+        }
+      }
+
+      .phone a {
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+        transition: opacity 0.1s ease-in-out;
+        font-weight: 500;
+        font-size: 20px;
+
+        @media screen and (max-width: 440px) {
+          font-size: 18px;;
+        }
+
+        @media screen and (max-width: 415px) {
+          font-size: 15px;
+        }
+
+        @media screen and (max-width: 390px) {
+          font-size: 14px;
+        }
+
+        @media screen and (max-width: 360px) {
+          font-size: 13px;
+        }
+      }
+
+      .phone a:hover {
+        opacity: 70%;
+      }
+    }
+
+    #home {
+      display: none;
+    }
+
+    a.adressNavbar {
+      width: calc(100% - 66px);
+      display: none; 
+      background: none;
+      border-radius: 10px;
+      border: solid 1px;
+      color: rgb(255, 255, 255);
+      padding: 15px 32px;
+      text-align: center;
+      font-size: 16px;
+      cursor: pointer;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      transition: all .1s ease-in-out;
+    }
+
+    a.adressNavbar:hover {
+      background: #6CF;
+      color: white;
+      border-color: white;
+    }
+
+    .adressNavbar img {
+      height: 15px;
+    }
+
+    @media screen and (max-width: 950px) {
+
+      a.adressNavbar {
+        display: block;
+      }
+
+      #home {
+        display: flex;
+      }
+
+      #icon {
+        display: none;
+      }
+
+      .active {
+        border: none;
+      }
+
+      .btnContainer {
+        width: calc(100% - 40px);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 20px;
+        align-items: center;
+      }
+
+      .item {
+        width: calc(100% - 20px);
+        display: flex;
+        flex: 1;
+        background-color: rgb(89, 89, 89);
+        border-radius: 10px;
+        align-items: center;
+        padding: 0 10px;
+        justify-content: center;
+        text-align: center;
+        border: 3px solid transparent;
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+      }
+
+      .logoNav img {
+        height: 50px;
+        display: block;
+      }
+
+      .burgerBtn {
+        cursor: pointer;
+        z-index: 3;
+        display: block;
+        // background-color: #007AFF;
+      }
+
+      .container {
+        opacity: 0%;
+        border-radius: 20px;
+        width: calc(100% - 40px);
+        max-width: 350px;
+        justify-content: space-around;
+        height: 500px;
+        z-index: 2;
+        position: absolute;
+        right: 0;
+        top: -595px;
+        background-color: rgb(26, 26, 26);
+        flex-direction: column;
+        padding: 75px 20px 20px 20px;
+        align-items: center;
+        transition: transform .3s ease-in-out, opacity .2s ease-in-out;
+      }
+    }
+  }
+}
+
+.navbar.open .burgerBtn span:nth-child(1) {
+  transform: translateY(0) rotate(45deg);
+}
+
+.navbar.open .burgerBtn span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar.open .burgerBtn span:nth-child(3) {
+  transform: translateY(0) rotate(-45deg);
+}
+
+.navbar.open .burgerBtn span {
+  background-color: rgb(255, 255, 255);
+}
+
+.navbar.open .burgerBtn {
+  background-color: #007AFF;
+}
+
+@media screen and (max-width: 950px) {
+  .navbar.open .container{
+    transform: translateY(100%);
+    opacity: 100%;
+  }
+}

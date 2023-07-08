@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import s from './style.module.scss';
+import s from './ClientsPage.module.scss';
 
 const ClientsPage: FC = () => {
   return (

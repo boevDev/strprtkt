@@ -1,23 +1,27 @@
 import { FC } from 'react';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import AboutPage from './Pages/About';
-import ServicesPage from './Pages/Services/Index';
+import AboutPage from './Pages/About/AboutPage';
+import ServicesPage from './Pages/Services/ServicesPage';
 import Navbar from './Components/Navbar/Navbar';
 import Header from './Components/Header/Header';
-import NotfoundPage from './Pages/NotFound/Index';
-import PartnersPage from './Pages/Partners/Index';
-import ClientsPage from './Pages/Clients/Index';
-import ObjectsPage from './Pages/Objects/Index';
-import ReviewsPage from './Pages/Reviews/Index';
-import ContactsPage from './Pages/Contacts/Index';
-import MainPage from './Pages/Main/Index';
+import NotfoundPage from './Pages/NotFound/NotFoundPage';
+import PartnersPage from './Pages/Partners/PartnersPage';
+import ClientsPage from './Pages/Clients/ClientsPage';
+import ObjectsPage from './Pages/Objects/ObjectsPage';
+import ReviewsPage from './Pages/Reviews/ReviewsPage';
+import ContactsPage from './Pages/Contacts/ContactsPage';
+import MainPage from './Pages/Main/MainPage';
 
 const App: FC = () => {
   return (
     <>
-      <Header />
-      <Navbar />
+      <div className='header'>
+        <Header />
+      </div>
+      <div className='headerNavbar'>
+        <Navbar />
+      </div>
       <Routes>
         <Route path='/' element={<MainPage />} />
         <Route path='about' element={<AboutPage />} />

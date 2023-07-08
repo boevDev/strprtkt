@@ -6,9 +6,9 @@ body {
   padding: 0;
   background: rgb(102,204,255);
   background: linear-gradient(0deg, rgba(102,204,255,1) 0%, rgba(51,102,153,1) 100%) no-repeat;
+  min-height: 100vh;
 }
 
-.active {
-  opacity: 100%;
-  color: white;
+a {
+  text-decoration: none;
 }

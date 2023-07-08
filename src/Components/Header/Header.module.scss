@@ -1,142 +1,112 @@
 .phoneNumber:hover {
   cursor: pointer;
 }
+.wrapper {
+  background-color: #fff;
+  padding: 20px 0;
 
-.displayInline {
-  display: inline-block;
-}
-
-.container {
-  text-align: center;
-  vertical-align: top;
-}
-
-.item {
-  vertical-align: top;
-  display: inline-block;
-  width: calc(100% / 5);
-}
-
-.parent {
-  width: 100%;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-}
-
-.logo {
-  padding: 0;
-}
-
-.contact {
-  padding-top: 25px;
-}
-
-.adress {
-  padding-top: 25px;
-
-  button {
-    margin-top: 40px;
-    background: none;
-    border-radius: 10px;
-    border: solid 1px;
-    color: rgb(0, 0, 0);
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
+  .container {
+    padding: 0 20px;
+    vertical-align: top;
+    display: flex;
+    width: calc(100% - 40px);;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    width: 100%;
-    transition: all .1s ease-in-out;
+    justify-content: space-between;
+    flex-direction: row;
+  
+    max-width: 960px;
+    margin: 0 auto;
 
-    @media only screen and (max-width: 1450px) {
-      margin-top: 30px;
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .item {
+      vertical-align: top;
+
+      a {
+        opacity: 100%;
+      }
+    }
+
+    .logo {
+      img {
+        height: 90px;
+      }
+    }
+
+    .contact {
+      a {
+        color: black;
+      }
+
+      .phone {
+        white-space: nowrap;
+        transition: opacity 0.1s;
+        font-size: 25px;
+      }
+      
+      .phone:hover {
+        opacity: 70%;
+      }
+
+      .mail {
+        text-align: center;
+        padding-top: 20px;
+      
+        a {
+          transition: opacity 0.1s;
+          opacity: 100%;
+          
+          text-decoration: underline;
+        }
+      
+        a:hover {
+          opacity: 70%;
+        }
+      }
+    }
+
+    .adressContainer {
+      .button {
+        margin-top: 20px;
+
+        a { 
+          width: calc(100% - 66px);
+          display: block; 
+          background: none;
+          border-radius: 10px;
+          border: solid 1px;
+          color: rgb(0, 0, 0);
+          padding: 15px 32px;
+          text-align: center;
+          font-size: 16px;
+          cursor: pointer;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 500;
+          transition: all .1s ease-in-out;
+        }
+      
+        a:hover {
+          background: #6CF;
+          color: white;
+          border-color: white;
+        }
+      }
     }
   }
-
-  button:hover {
-    background: #6CF;
-    color: white;
-    border-color: white;
+  
+  @media only screen and (min-width: 768px) {
+    
   }
 
-  @media only screen and (max-width: 1750px) {
-    font-size: 15px;
+  @media only screen and (min-width: 1024px) {
+      
   }
 
-  @media only screen and (max-width: 1650px) {
-    font-size: 14px;
+  @media only screen and (min-width: 1200px) {
+      
   }
-
-  @media only screen and (max-width: 1530px) {
-    font-size: 13px;
-  }
-
-  @media only screen and (max-width: 1430px) {
-    font-size: 12px;
-  }
-
-  @media only screen and (max-width: 1310px) {
-    font-size: 11px;
-  }
-
-  @media only screen and (max-width: 1220px) {
-    font-size: 10px;
-  }
-
-}
-
-.mail {
-  padding: 25px;
-}
-
-.mail a:hover {
-  opacity: 70%;
-}
-
-.item a {
-  opacity: 100%;
-}
-
-.mail a {
-  transition: opacity 0.1s;
-  opacity: 100%;
-  color: rgb(0, 0, 0);
-}
-
-.contact a {
-  text-decoration: underline;
-}
-
-.parent {
-  background-color: rgb(245, 245, 245);
-}
-
-.phoneNumber {
-  color: black;
-  transition: opacity 0.1s;
-  font-size: 25px;
-
-  @media only screen and (max-width: 1444px) {
-    font-size: 20px;
-  }
-
-  @media only screen and (max-width: 1310px) {
-    font-size: 19px;
-  }
-
-  @media only screen and (max-width: 1200px) {
-    font-size: 15px;
-  }
-
-}
-
-.phoneNumber:hover {
-  opacity: 70%;
-}
-
-.logo img {
-  width: 100%;
 }

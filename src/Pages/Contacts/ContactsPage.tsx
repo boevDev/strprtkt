@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import s from './ContactsPage.module.scss';
 
 const ContactsPage: FC = () => {
   return (
