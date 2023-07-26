@@ -1,5 +1,9 @@
 .navbar {
   width: 100%;
+  z-index: 99;
+  position: sticky;
+  top: 0;
+  width: 100%;
   .wrapper {
     background-color: rgb(26, 26, 26);
 
@@ -22,9 +26,8 @@
       .item {
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
-        color: rgb(255, 255, 255);
-        transition: opacity 0.2s ease-in-out;
-        transition: border 0.05s ease-in-out;
+        color: white;
+        transition: opacity 0.2s ease-in-out, border 0.05s ease-in-out;
         text-decoration: none;
         opacity: 50%;
       }
@@ -194,12 +197,15 @@
       }
 
       .btnContainer {
+        position: relative;
+        z-index: 50;
         width: calc(100% - 40px);
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding: 10px 20px;
         align-items: center;
+        background-color: rgb(26, 26, 26);
       }
 
       .item {
@@ -227,23 +233,28 @@
         cursor: pointer;
         z-index: 3;
         display: block;
-        // background-color: #007AFF;
+        transition: background-color 0.3s ease-in-out;
+      }
+
+      .burgerBtn:hover {
+        background-color: #007AFF;
       }
 
       .container {
         opacity: 0%;
-        border-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
         width: calc(100% - 40px);
         max-width: 350px;
         justify-content: space-around;
         height: 500px;
-        z-index: 2;
+        z-index: 49;
         position: absolute;
         right: 0;
-        top: -595px;
+        top: -605px;
         background-color: rgb(26, 26, 26);
         flex-direction: column;
-        padding: 75px 20px 20px 20px;
+        padding: 85px 20px 20px 20px;
         align-items: center;
         transition: transform .3s ease-in-out, opacity .2s ease-in-out;
       }

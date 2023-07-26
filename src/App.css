@@ -1,3 +1,5 @@
+
+
 h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
@@ -8,4 +10,11 @@ h1 {
     .header {
         display: none;
     }
+}
+
+footer {
+    z-index: 50;
+    background-color: #1f52b1;
+    width: 100%;
+    position: relative;
 }

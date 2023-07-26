@@ -1,0 +1,28 @@
+.wrapper {
+    font-family: 'Montserrat', sans-serif;
+
+    h1 {
+        white-space: nowrap;
+    }
+
+    .text {
+        text-align: start;
+        margin-bottom: 20px;
+    }
+
+    a {
+        margin: 0 auto;
+        display: block;
+        color: black;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 12px 20px;
+        max-width: 200px;
+    }
+
+    a:hover {
+        background-color: #6CF;
+        border-color: white;
+        color: white;
+    }
+}

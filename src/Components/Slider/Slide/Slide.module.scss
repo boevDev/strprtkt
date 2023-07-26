@@ -6,9 +6,12 @@
     justify-content: space-between;
     flex-direction: column;
 
+    
+
     .div1 { 
         flex: 1;
         img {
+            object-fit: cover;
             min-width: none;
             width: 100%;
             border-radius: 20px;
@@ -18,8 +21,12 @@
     
 
     .div2 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
         font-family: 'Roboto', sans-serif;
         font-size: 15px;
+        gap: 10px;
 
         h1 {
             font-size: 28px;
@@ -28,7 +35,7 @@
             margin-bottom: 20px;
         }
 
-        .button {
+        .boxButton {
             width: 100%;
             margin-top: 40px;
             max-width: 275px;
@@ -53,7 +60,9 @@
                 border-color: white;
             }    
         }
-    } 
+    }
+    
+    
 
     @media screen and (min-width: 1000px) {
         flex-direction: row;
@@ -70,10 +79,37 @@
         }
     }
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 600px) {
+        position: relative;
+        padding: 25px;
+        gap: 10px;
+        
+        .div1 {
+            img {
+                height: 100%;
+            }
+        }
+
         .div2 {
-            margin: 0 auto;
-            text-align: center;
+            gap: 10px;
+            h1 {
+                font-size: 24px;
+                margin: 0;
+            }
+            .boxText{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 5px;
+            }
+    
+            .text {
+                margin: 0;
+            }
+    
+            .boxButton {
+                margin: 0;
+            }
         }
     }
 
@@ -85,6 +121,80 @@
             h1 {
                 font-size: 24px;
             }
+        }
+    }
+
+    
+
+    @media screen and (max-height: 500px) {
+        position: relative;
+
+        .div2 {
+            width: calc(100% - 130px);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 15px;
+            border-radius: 10px;
+            position: absolute;
+            text-align: center;
+            font-size: 13px;
+            color: #ffff;
+            bottom: 50px;
+            gap: 10px;
+
+            @media screen and (max-width: 600px) {
+                width: calc(100% - 80px);
+                bottom: 25px;
+            }
+            
+            h1 {
+                font-size: 25px;
+                margin: 0;
+            }
+
+            .text {
+                margin: 0;
+            }
+
+            .boxButton {
+                margin: 0;
+            }
+
+            a.button {
+                color: #000;
+                background-color: #ffffff;
+                border: none;
+                -webkit-box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.5);
+                -moz-box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.5);
+                box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.5);
+            }
+
+            a.button:hover {
+                background-color: #ffffff;
+                color: #000;
+            }
+        }
+    }
+
+    @media screen and (max-height: 700px) {
+        padding: 25px;
+
+        img {
+            max-height: 300px;
+        }
+
+        .div2 {
+            width: calc(100% - 80px);
+            gap: 10px;
+            bottom: 20px;
+        }
+    }
+
+    @media screen and (max-height: 370px) {
+        img {
+            max-height: 250px;
         }
     }
 }

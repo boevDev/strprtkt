@@ -15,9 +15,11 @@ const Slide: FC<AppProps> = (AppProps) => (
         <img src={AppProps.srcImg} alt='Не удалось загрузить изображение' />
       </div>
       <div className={s.div2}>
-        <h1>{AppProps.title}</h1>
-        <div className={s.text}>{AppProps.text}</div>
-        <div className={s.button}>
+        <div className={s.boxText}>
+          <h1>{AppProps.title}</h1>
+          <div className={s.text}>{AppProps.text}</div>
+        </div>
+        <div className={s.boxButton}>
           <Link className={s.button} to='/services'>
             Подробнее
           </Link>

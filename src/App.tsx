@@ -12,10 +12,11 @@ import ObjectsPage from './Pages/Objects/ObjectsPage';
 import ReviewsPage from './Pages/Reviews/ReviewsPage';
 import ContactsPage from './Pages/Contacts/ContactsPage';
 import MainPage from './Pages/Main/MainPage';
+import Footer from './Components/Footer/Footer';
 
 const App: FC = () => {
   return (
-    <>
+    <div className='app'>
       <div className='header'>
         <Header />
       </div>
@@ -33,7 +34,10 @@ const App: FC = () => {
         <Route path='contacts' element={<ContactsPage />} />
         <Route path='*' element={<NotfoundPage />} />
       </Routes>
-    </>
+      <footer>
+        <Footer />
+      </footer>
+    </div>
   );
 };
 

@@ -1,0 +1,38 @@
+.wrapper {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+
+  .container {
+    padding: 20px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: calc(100% - 40px);
+    max-width: 1200px;
+    .box1 {
+      text-align: start;
+
+      a {
+        color: white;
+        text-decoration: underline;
+      }
+
+      .company {
+        margin-top: 20px;
+      }
+    }
+
+    .box2 {
+      text-align: end;
+
+      .developer {
+        margin-top: 20px;
+      }
+    }
+  }  
+}
