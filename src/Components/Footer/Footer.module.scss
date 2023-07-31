@@ -14,6 +14,7 @@
 
     width: calc(100% - 40px);
     max-width: 1200px;
+
     .box1 {
       text-align: start;
 
@@ -34,5 +35,16 @@
         margin-top: 20px;
       }
     }
-  }  
+  }
+
+  @media screen and (max-width: 780px) {
+    .container {
+      flex-direction: column;
+
+      .box2 {
+        margin-top: 20px;
+        text-align: start;
+      }
+    }
+  }
 }

@@ -37,6 +37,9 @@ const App: FC = () => {
       <footer>
         <Footer />
       </footer>
+      {/* <a className='sendRequest' href='/'>
+        Отправить заявку
+      </a> */}
     </div>
   );
 };

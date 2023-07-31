@@ -1,7 +1,7 @@
-
 .phoneNumber:hover {
   cursor: pointer;
 }
+
 .wrapper {
   background-color: white;
   padding: 20px 0;
@@ -10,13 +10,14 @@
     padding: 0 20px;
     vertical-align: top;
     display: flex;
-    width: calc(100% - 40px);;
+    width: calc(100% - 40px);
+    ;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     justify-content: space-between;
     flex-direction: row;
-  
-    max-width: 960px;
+
+    max-width: 980px;
     margin: 0 auto;
 
     @media only screen and (max-width: 768px) {
@@ -48,7 +49,7 @@
         transition: opacity 0.1s;
         font-size: 25px;
       }
-      
+
       .phone:hover {
         opacity: 70%;
       }
@@ -56,14 +57,14 @@
       .mail {
         text-align: center;
         padding-top: 20px;
-      
+
         a {
           transition: opacity 0.1s;
           opacity: 100%;
-          
+
           text-decoration: underline;
         }
-      
+
         a:hover {
           opacity: 70%;
         }
@@ -74,9 +75,9 @@
       .button {
         margin-top: 20px;
 
-        a { 
+        a {
           width: calc(100% - 66px);
-          display: block; 
+          display: block;
           background: none;
           border-radius: 10px;
           border: solid 1px;
@@ -89,7 +90,7 @@
           font-weight: 500;
           transition: all .1s ease-in-out;
         }
-      
+
         a:hover {
           background: #6CF;
           color: white;
@@ -98,16 +99,10 @@
       }
     }
   }
-  
-  @media only screen and (min-width: 768px) {
-    
-  }
 
-  @media only screen and (min-width: 1024px) {
-      
-  }
+  @media only screen and (min-width: 768px) {}
 
-  @media only screen and (min-width: 1200px) {
-      
-  }
+  @media only screen and (min-width: 1024px) {}
+
+  @media only screen and (min-width: 1200px) {}
 }

@@ -8,7 +8,6 @@ const Header: FC = () => {
       <div className={s.wrapper}>
         <div className={s.container}>
           <Link to='/' className={`${s.item} ${s.logo}`}>
-            {/* <img src='https://i.postimg.cc/Z5Jc834X/logo.png' alt='Не удалось загрузить изображение' /> */}
             <img
               src='https://i.postimg.cc/ZRhhBdFp/logo-strptkt.png'
               alt='Не удалось загрузить изображение'
@@ -38,14 +37,7 @@ const Header: FC = () => {
               </a>
             </div>
             <div className={s.mail}>
-              <a
-                href='mailto:stroyprotekt@mail.ru'
-                onClick={() =>
-                  navigator.clipboard.writeText('stroyprotekt@mail.ru')
-                }
-              >
-                stroyprotekt@mail.ru
-              </a>
+              <a href='mailto:stroyprotekt@mail.ru'>stroyprotekt@mail.ru</a>
             </div>
           </div>
 

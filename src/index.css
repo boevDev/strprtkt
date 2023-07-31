@@ -4,11 +4,13 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #32cdef;
-  background: linear-gradient(0deg, #1f52b1 0%, #33deff 100%) no-repeat;
   min-height: 100vh;
+  
+  background-color: #33deff;
+  background: linear-gradient(0deg, #1f52b1, #33deff) no-repeat;
 }
 
 a {
   text-decoration: none;
 }
+

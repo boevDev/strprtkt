@@ -1,28 +1,28 @@
 .info {
 
-    .wrapper {
-        padding-top: 25px;
-        text-align: center;
+  .wrapper {
+    padding-top: 25px;
+    text-align: center;
 
-        .container {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            padding: 25px;
-            gap: 40px;
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 25px;
+      gap: 40px;
 
-            .item {
-                flex: 1;
-            }
+      .item {
+        flex: 1;
+      }
 
-            #aboutUs {
-                flex-grow: 2;
-            }
+      #aboutUs {
+        flex-grow: 2;
+      }
 
-            #advantages {
-                flex-grow: 1;
-            }
-        }
+      #advantages {
+        flex-grow: 1;
+      }
     }
+  }
 }

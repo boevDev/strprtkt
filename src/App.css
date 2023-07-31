@@ -1,20 +1,51 @@
-
-
 h1 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 @media only screen and (max-width: 950px) {
-    .header {
-        display: none;
-    }
+  .header {
+    display: none;
+  }
 }
 
 footer {
-    z-index: 50;
-    background-color: #1f52b1;
-    width: 100%;
-    position: relative;
+  z-index: 50;
+  background-color: #1f52b1;
+  width: 100%;
+  position: relative;
+}
+
+.sendRequest {
+  position: fixed;
+  top: 30%;
+  left: 0;
+  z-index: 99;
+  background-color: #33deff;
+  /* background: linear-gradient(0deg, #1f52b1 0%, #33deff 100%); */
+  color: white;
+  writing-mode: vertical-lr;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 20px;
+  justify-content: center;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-shadow: 0px 0px 2px #000000;
+
+
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+
+}
+
+.headerNavbar {
+  width: 100%;
+  z-index: 99;
+  position: sticky;
+  top: 0;
 }

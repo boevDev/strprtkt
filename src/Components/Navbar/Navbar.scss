@@ -1,14 +1,9 @@
 .navbar {
-  width: 100%;
-  z-index: 99;
-  position: sticky;
-  top: 0;
-  width: 100%;
   .wrapper {
     background-color: rgb(26, 26, 26);
 
     .container {
-      max-width: 960px;
+      max-width: 980px;
       padding: 0 20px;
       width: calc(100% - 40px);
       margin: 0 auto;
@@ -17,7 +12,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-    
+
       img {
         width: 30px;
         vertical-align: middle;
@@ -44,6 +39,7 @@
         border-bottom: 3px solid #007AFF;
       }
     }
+
     .burgerBtn {
       display: none;
       position: relative;
@@ -127,7 +123,8 @@
         font-size: 20px;
 
         @media screen and (max-width: 440px) {
-          font-size: 18px;;
+          font-size: 18px;
+          ;
         }
 
         @media screen and (max-width: 415px) {
@@ -154,7 +151,7 @@
 
     a.adressNavbar {
       width: calc(100% - 66px);
-      display: none; 
+      display: none;
       background: none;
       border-radius: 10px;
       border: solid 1px;
@@ -283,7 +280,7 @@
 }
 
 @media screen and (max-width: 950px) {
-  .navbar.open .container{
+  .navbar.open .container {
     transform: translateY(100%);
     opacity: 100%;
   }

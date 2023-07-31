@@ -1,80 +1,78 @@
 .main {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    align-items: center;
-    align-content: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  background: url(https://stroyprotekt-ekb.ru/templates/stroyprotekt-ekb/images/pic7.png);
+  background-color: rgba(0, 0, 0, 0.5);
+
+  .container {
+    width: calc(100% - 40px);
+    padding: 0 20px;
     justify-content: center;
+    align-items: center;
     display: flex;
-    background: url(https://stroyprotekt-ekb.ru/templates/stroyprotekt-ekb/images/pic7.png);
-    background-color: rgba(19, 19, 19, 0.5);
+    flex-direction: column;
 
-    .container {
-        width: calc(100% - 40px);
-        // max-width: 960px;
-        padding: 0 20px;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
+    .slider {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      z-index: 3;
+      max-width: 980px;
 
-        .slider {
-            width: 100%;
-            height: 100%;
-            position: relative;
-            z-index: 3;
-            max-width: 960px;
-    
-            background-color: white;
-            border-bottom-left-radius: 40px;
-            border-bottom-right-radius: 40px;
+      background-color: white;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
 
-            -webkit-box-shadow: 0px 0px 20px 0px rgba(34, 60, 80, 0.5);
-            -moz-box-shadow: 0px 0px 20px 0px rgba(34, 60, 80, 0.5);
-            box-shadow: 0px 0px 20px 0px rgba(34, 60, 80, 0.5);
-        }
-    
-        .services {
-            position: relative;
-            z-index: 1;
-            background: rgb(102,204,255);
-            // background: linear-gradient(0deg, rgba(102,204,255,1) 0%, rgba(51,102,153,1) 100%);
-            background: linear-gradient(0deg, #1f52b1 0%, #33deff 100%);
-            border-bottom-left-radius: 40px;
-            border-bottom-right-radius: 40px;
-            justify-content: center;
-            align-items: center;
-            
-    
-            margin-top: -35px;
-    
-            height: 100%;
-            width: 100%;
-            max-width: 960px;
+      -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+    }
 
-            -webkit-box-shadow: 0px 0px 20px 0px rgba(34, 60, 80, 0.5);
-            -moz-box-shadow: 0px 0px 20px 0px rgba(34, 60, 80, 0.5);
-            box-shadow: 0px 0px 20px 0px rgba(34, 60, 80, 0.5);
-        }
+    .services {
+      position: relative;
+      z-index: 1;
+      background: rgb(102, 204, 255);
+      background: linear-gradient(0deg, #1f52b1 0%, #33deff 100%);
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      justify-content: center;
+      align-items: center;
 
-        .info {
-            border-top-left-radius: 40px;
-            border-top-right-radius: 40px;
-            width: 100%;
-            max-width: 1200px;
-            position: relative;
-            z-index: 2;
-            background-color: white;
-            margin-top: -35px;
 
-            -webkit-box-shadow: 0px 0px 20px 0px rgba(34, 60, 80, 0.5);
-            -moz-box-shadow: 0px 0px 20px 0px rgba(34, 60, 80, 0.5);
-            box-shadow: 0px 0px 20px 0px rgba(34, 60, 80, 0.5);
+      margin-top: -35px;
 
-            @media screen and (max-width: 1000px) {
-                border-radius: 0;
-            }
-        }
-    } 
-}    
+      height: 100%;
+      width: 100%;
+      max-width: 980px;
+
+      -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    .info {
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+      width: 100%;
+      max-width: 1200px;
+      position: relative;
+      z-index: 2;
+      background-color: white;
+      margin-top: -35px;
+
+      -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+
+      @media screen and (max-width: 1000px) {
+        border-radius: 0;
+      }
+    }
+  }
+}
