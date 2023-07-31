@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/strprtkt/static/css/main.26498b9e.css",
-    "main.js": "/strprtkt/static/js/main.8c87a346.js",
+    "main.js": "/strprtkt/static/js/main.7c690e94.js",
     "index.html": "/strprtkt/index.html",
     "static/media/check-mark-button-svgrepo-com.svg": "/strprtkt/static/media/check-mark-button-svgrepo-com.bbdf35606c021fd5e7fc.svg",
     "main.26498b9e.css.map": "/strprtkt/static/css/main.26498b9e.css.map",
-    "main.8c87a346.js.map": "/strprtkt/static/js/main.8c87a346.js.map"
+    "main.7c690e94.js.map": "/strprtkt/static/js/main.7c690e94.js.map"
   },
   "entrypoints": [
     "static/css/main.26498b9e.css",
-    "static/js/main.8c87a346.js"
+    "static/js/main.7c690e94.js"
   ]
 }
